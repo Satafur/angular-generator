@@ -1,0 +1,39 @@
+doctype html
+html(lang='en', ng-app='myApp')
+    head
+        title Angular Generator v - 0.0.5
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        link(rel='icon', type='image/ico', href='favicon.ico')
+
+        // build:css public/style.min.css
+        // bower:css
+        // endbower
+        // inject:css
+        // endinject
+        // endbuild
+
+    body(layout='column', flex, ng-cloak,style="height:100%")
+        //if lt IE 7
+                 p
+                   | Su Navegador Se Encuentra
+                   strong Opsoleto
+                   | .
+                   |         Por Favor
+                   a(href='http://browsehappy.com/') Actualizar Navegador
+                   |  Para Una Mejor Experiencia.
+
+        div#content(ng-view='')
+
+        // build:js public/libs.min.js
+        // bower:js
+        // endbower
+        // endbuild
+
+        // build:js public/app.min.js
+        // angular:js
+        // endinject
+        // inject:js
+        // endinject
+        // endbuild
+

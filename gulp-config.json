@@ -1,0 +1,30 @@
+{
+  "base_app":"./app",
+  "dir":{
+    "public": "./app/public/",
+    "stylesheet": "./app/public/stylesheet/",
+    "script": "./app/public/javascript/",
+    "angular":"./app/angular/",
+    "view": "./app/view"
+  },
+  "dest":{
+    "public": "./src/public/",
+    "stylesheet": "./src/public/stylesheet/",
+    "script": "./src/public/javascript/",
+    "angular":"./src/angular/",
+    "view": "./src/view"
+  },
+  "exclude":[
+    "!app/**/*.min.scc",
+    "!app/**/*.min.js",
+    "!app/lib/**/*.js",
+    "!app/lib/**/*.css"
+  ],
+  "serve":{
+    "base_dir": "./app",
+    "prod_dir": "./dist",
+    "base":"http://localhost:3000",
+    "host":"localhost",
+    "port":3000
+  }
+}
